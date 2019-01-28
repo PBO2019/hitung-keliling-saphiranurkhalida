@@ -1,17 +1,37 @@
 public class lingkaran {
-    public static void main(String[] args) {
-        lingkaran hkl = new lingkaran();
-        hkl.lingkarann();
-    }
-    private void lingkarann (){
-        double phi = 3.14;
-        double r = 5;
-        double KelilingLingkaran;
 
-       // public void jumlah(){
-            KelilingLingkaran = 2 * phi * r;
-            System.out.println("Hasil Keliling Lingkaran Adalah = "+KelilingLingkaran);
+        private double keliling;
+        private double phi = 3.14;
+        private int radius;
+
+    public void hitungkelilinglingkaran() {
+            this.keliling = 2 * phi * radius;
         }
+
+        public void setradius ( int radius){
+            this.radius = radius;
+        }
+
+    public int getRadius() {
+        return radius;
     }
+
+    public void setKeliling(double keliling) {
+        this.keliling = keliling;
+    }
+
+    public double getkeliling() {
+            return keliling;
+        }
+
+    public void setPhi(double phi) {
+        this.phi = phi;
+    }
+
+    public double getPhi() {
+        return phi;
+    }
+}
+
 
 
